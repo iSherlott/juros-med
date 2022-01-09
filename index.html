@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo de alunos inadimplentes</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <article id="content">
+        <h1>Juros Med</h1>
+
+        <section id="btn_menu">
+          <button class="btn_plus" id="btn_plus">+</button>
+          <button class="btn_plus" onClick="window.print()">
+            <i class="fa fa-print"></i>
+          </button>
+        </section>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">CPF/CNPJ</th>
+              <th scope="col">Nome</th>
+              <th scope="col" id="qtd_days">Qtd dias inadimplente</th>
+              <th scope="col" id="qtd_month">Qtd mês inadimplente</th>
+              <th scope="col" id="qtd_month">Multa</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+      <button id="btn_calc">Calcular</button>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
